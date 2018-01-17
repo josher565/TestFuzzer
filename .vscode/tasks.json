@@ -1,0 +1,25 @@
+{
+    "version": "0.1.0",
+    "command": "dotnet",
+    "isShellCommand": true,
+    "args": [],
+    "tasks": [
+        {
+            "taskName": "build",
+            "args": [
+                "${workspaceRoot}/CodeAffinity.TestFuzzer/CodeAffinity.TestFuzzer.csproj"
+                
+            ],
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "test",
+            "isTestCommand": true,
+            "showOutput": "always",
+            "args": [
+                "${workspaceRoot}/CodeAffinity.TestFuzzer.UnitTest/CodeAffinity.TestFuzzer.UnitTest.csproj"
+            ]
+        }
+    ]
+}
